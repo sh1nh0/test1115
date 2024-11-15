@@ -24,9 +24,8 @@ body {
 
 #header_wrap {
     background-color: #fff;
-    /* color: #fff; */
-    position: fixed;
-    top: center;
+    /* position: fixed;
+    top: center; */
     width: 100%;
     z-index: 2;
     box-shadow: #00000033 1px 1px 10px;
@@ -112,124 +111,77 @@ body {
 
 
 
-/* bg 시작 */
+/* banner 시작 */
 
-
-/* #bg{
-    width: 100%;
+.banner {
+    width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
-#bg>div>video{
-    width: 100%;
-    display: block;
-} */
-
-/* .bg_v video{ position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-    overflow: hidden;}
-.bg_v{
-    display:block;
-    overflow: hidden;
-    height: 867px;
-    position:relative;} */
-
- #bg>div{
-    background: url(../img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 1080px;
- }
-
-/* .bg_v{
-        width: 100%;
-        height: 960px;
-        margin: 0 auto;
-        position: fixed;
-        top: 0;
-        left: center;
-        z-index: 0;
-} */
-
-
-/* bg 끝 */
-
-
-#circle_bg{
-    width: 100%;
-    height: 163px;
-    margin: 0 auto;
-    /* background-color: #74b754; */
-    background: url(../img/circle_bg-.png);
-    background-size: cover;
-    background-position: center;
-    height: 163px;
-    position: relative;
+.banner h1{
+    font-family: '';
+    font-size: 60px;
+    font-weight: 400;
+    color: #74b754;
+    padding: 114px 0;
 }
 
-/* #circle_bg div{
-    background: url(../img/circle_bg-.png);
-    background-size: cover;
-    background-position: center;
-    height: 163px;
-} */
+.banner>img{
+    width: 755px;
+}
+
+/* banner 끝 */
 
 
 /* section1 시작 */
 
-#section1_wrap{
-    width: 100%;
-    /* background-color: #fff; */
-}
-
-.section1_wrap2{
-    width: 1200px;
-    margin: 0 auto;
-    /* position: relative; */
-    background-color: #fff;
-}
-.section1{
-    width: 1200px;
-    margin: 0 auto;
+.section1 {
+    width: 600px;
+    margin: 135px auto;
     text-align: center;
+}
+
+
+.section1 h2{
+    font-family: '';
+    color: #74b754;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.menu{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-
-    /* 포지션 제외 시 괜찮음
-    해결할 것 */
-/
+    width: 600px;
 }
 
-.logo_green{
-    width: 347px;
-    margin: 135px 0;
-}
-
-.slogan{
-    width: 389px;
-    margin-bottom: 31px;
-}
-
-.section1>img{
+.menu li a{
     display: block;
+    padding: 5px 10px;
+    border: #ddd 1px solid;
+    border-radius: 40px;
+    width: 130px;
+    box-sizing: border-box;
+  
 }
 
-.brand {
-    width: 100%;
-    margin-top: 100px;
+.menu li:hover a, .on {
+    background-color: #74b754;
+    border-radius: 40px;
+    color: #fff;
+    width: 130px;
 }
+
+/* .menu>li>a.visited {
+    background-color: #74b754;
+    border-radius: 40px;
+    color: #fff;
+    width: 130px;
+} */
+
 
 /* section1 끝 */
 
@@ -237,36 +189,89 @@ body {
 
 /* section2 시작 */
 
-.section2 {
+.section2{
     width: 1200px;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 
-.section2>hr{
-    margin: 135px 0;
+.shop_list>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.section2>h1{
-    font-family: '';
-    padding-bottom: 50px;
+
+.shop_list>ul>li{
+    width: 23%;
+    text-align: left;
 }
-.section2 img {
+
+.shop_box{
+    overflow: hidden;
+}
+.shop_box img{
     display: block;
     width: 100%;
 }
 
-.bi_bottom {
-    margin-bottom: 135px;
+.shop_box:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
+
+.shop_title{
+    display: block;
+    font-size: 20px;
+    padding: 20px 0 0px 0;
+    line-height: 1.2em;
+    color: #666;
+}
+.price {
+    font-weight: 600;
+}
+
+.shop_list ul li:nth-child(5), .shop_list ul li:nth-child(6),
+.shop_list ul li:nth-child(7), .shop_list ul li:nth-child(8){
+    padding: 60px 0;
+}
+
+
+
+
+.number{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.number>li{
+    text-align: center;
+}
+
+.number>li>a{
+    display: block;
+    width: 30px;
+    box-sizing: border-box;
+    border-bottom: #ddd 3px solid;
+}
+
+/* .number li:hover a, .on2{
+    border-bottom: #74b754 3px solid;
+}
+    
+제이쿼리 사용 */
+
+
+/* 축소 시 너비 조정 */
+/* @media(max-width:1520px){
+    .section2{
+        width: 90%;
+    }
+} */
 /* section2 끝 */
-
-
-
-
-
-
-
-
-
 
 
 
